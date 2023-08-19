@@ -17,8 +17,11 @@ module.exports = {
         primary: "#FFE900",
         contrast: "#12253B",
         accent: "#5555C3",
+        card: "#111111",
       },
       fontFamily: {
+        sans: ['var(--font-inter)'],
+        mono: ['var(--font-dancingScript)'],
         poppins: "poppins",
       },
       backgroundSize: {
