@@ -18,6 +18,7 @@ module.exports = {
         contrast: "#12253B",
         accent: "#5555C3",
         card: "#111111",
+        cardAccent: "#171717",
       },
       fontFamily: {
         sans: ['var(--font-inter)'],

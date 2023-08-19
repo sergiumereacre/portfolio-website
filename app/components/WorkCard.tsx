@@ -37,7 +37,7 @@ export default function WorkCard(props: WorkCardProps) {
     }
 
     return (
-        <motion.div whileHover={{ scale: 0.95 }} className="bg-card p-7 max-w-lg rounded-2xl flex flex-col gap-2">
+        <motion.div whileHover={{ scale: 0.97 }} className="bg-card p-7 max-w-lg rounded-2xl flex flex-col gap-2 hover:bg-cardAccent hover:transition-all hover:duration-250 hover:ease-out">
             <div className="flex flex-row items-center gap-3">
                 <Icon size={iconSize} className={`text-gray-300 drop-shadow-[0px_0px_15px_var(--tw-shadow-color)] ${shadowColour}`} />
                 <div className="w-full">
@@ -45,7 +45,7 @@ export default function WorkCard(props: WorkCardProps) {
                         <p className="text-gray-300 text-lg">{props.title}</p>
                         <div className="flex flex-row items-center text-sm">
                             <IoLocationSharp size={20} className="text-gray-400 inline-block" />
-                            <a href={props.address} target="_blank" rel="noopener noreferrer" className={`text-gray-400 inline-block ml-1 underline underline-offset-2 decoration-dashed hover:animate-pulse ${decorationColour}`}>{props.location}</a>
+                            <a href={props.address} target="_blank" rel="noopener noreferrer" className={`text-gray-400 inline-block ml-1 underline underline-offset-2 hover:animate-pulse ${decorationColour}`}>{props.location}</a>
                         </div>
                     </div>
                     <p className="text-gray-400 text-sm">{props.timeFrame}</p>

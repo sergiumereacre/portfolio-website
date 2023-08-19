@@ -24,8 +24,8 @@ export default function Home() {
             <div className="bg-background min-h-screen">
                 <div className="flex flex-col">
                     <Navbar />
-                    <div className="flex flex-col snap-x">
-                        <section className="flex flex-col items-center justify-center min-h-[625px] md:px-16 lg:px-20 max-w-[1024px] mx-auto snap-start">
+                    <div className="flex flex-col">
+                        <section className="flex flex-col items-center justify-center min-h-[625px] md:px-16 lg:px-20 max-w-[1024px] mx-auto">
                             <div style={roboto.style} className="flex items-center flex-col md:flex-row md:gap-2 tracking-tighter text-8xl bg-gradient-to-r from-primary via-orange-400 to-primary text-transparent bg-clip-text animate-gradient bg-300%">
                                 <h2 className="py-2">
                                     Sergiu
@@ -74,36 +74,40 @@ export default function Home() {
                             </div>
                         </section>
                         <Divider />
-                        <section className="flex flex-col justify-center px-5 py-10 md:py-20 max-w-[1024px] mx-auto snap-center">
+                        <section className="flex flex-col justify-center px-5 py-10 md:py-20 max-w-[1024px] mx-auto">
                             <div style={roboto.style} className="tracking-tighter text-4xl bg-gradient-to-r from-primary via-orange-400 to-primary text-transparent bg-clip-text animate-gradient bg-300%">
                                 <h2 className="text-center">
                                     About me.
                                 </h2>
                             </div>
-                            <div className="pt-3 flex flex-col md:flex-row items-center gap-5">
+                            <div className="pt-5 flex flex-col md:flex-row items-center gap-5 md:gap-10">
                                 <Image src={profile} alt="Sergiu Mereacre" className=" h-72 w-max rounded-[50px]" />
-                                <p className="text-gray-400 text-lg">
-                                    I&apos;m a software engineer based in Ireland, dedicated to solving real-world problems through product development. Computers have always been my passion, driving me to explore new opportunities and technologies. From a young age, I&apos;ve been drawn to designing and building projects from scratch. This deep interest in technology and software engineering led me to pursue a degree in Computer Systems at the <a href="https://www.ul.ie/" target="_blank"
-                                        rel="noopener noreferrer" className="text-green-400 hover:animate-pulse">University of Limerick</a>. Now, I am eager to apply my skills and passion to impactful endeavors.
+                                <p className="text-gray-400 text-lg text-center md:text-left">
+                                    I&apos;m a software engineer based in Ireland, dedicated to solving real-world problems
+                                    through product development. Computers have always been my passion, driving me to explore
+                                    new opportunities and technologies. From a young age, I&apos;ve been drawn to designing and
+                                    building projects from scratch. This deep interest in technology and software engineering led
+                                    me to pursue a degree in Computer Systems at the <a href="https://www.ul.ie/" target="_blank"
+                                        rel="noopener noreferrer" className="text-green-400 hover:animate-pulse">University of Limerick</a>.
+                                    Now, I am eager to apply my skills and passion to impactful endeavors.
                                 </p>
                             </div>
                         </section>
                         <Divider />
-                        <section className="flex flex-col justify-center px-5 py-10 md:py-20 max-w-[1024px] mx-auto gap-5 snap-center w-full">
+                        <section className="flex flex-col justify-center px-5 py-10 md:py-20 max-w-[1024px] mx-auto gap-5 w-full">
                             <div style={roboto.style} className="tracking-tighter text-4xl bg-gradient-to-r from-primary via-orange-400 to-primary text-transparent bg-clip-text animate-gradient bg-300%">
                                 <h2 className="text-center">
-                                    My journey.
+                                    Career path.
                                 </h2>
                             </div>
                             <div className="flex flex-col justify-end gap-10 md:px-10 lg:px-20">
                                 <div className="">
                                     <WorkCard location="UL" title="Computer Systems Student" timeFrame="May 2020 - PRESENT" type="student" address="https://www.ul.ie/">
-                                        Maintaining a QCA of 3.64 thus far, I am currently in my third
-                                        year of studies at the University of Limerick. In my second
-                                        year of studies, I had the privilege of being awarded the
-                                        Huawei Seeds for the Future scholarship, which provided me
-                                        with a unique opportunity to explore emerging technologies and
-                                        deepen my understanding of the field.
+                                    Maintaining a QCA of 3.64, I am currently approaching the culmination of 
+                                    my academic journey at the University of Limerick. During my second year of study, 
+                                    I was honored to receive the prestigious Huawei Seeds for the Future scholarship, a distinction 
+                                    that not only affirmed my dedication but also unlocked an exclusive avenue for delving into 
+                                    cutting-edge technologies and fortifying my expertise in the domain.
                                     </WorkCard>
                                 </div>
                                 <div className="ml-auto">

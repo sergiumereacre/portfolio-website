@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
       <html lang="en" className={inter.className}>
-          <body className='dark scroll-auto'>
+          <body className='dark'>
             <Providers>{children}</Providers>
           </body>
       </html>
