@@ -38,12 +38,17 @@ module.exports = {
           "50%": { backgroundPosition: "100% 50%" },
           "100%": { backgroundPosition: "0% 50%" },
         },
+        pulsate: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.25)' },
+        },
       },
       backgroundSize: {
         "300%": "300%",
       },
       animation: {
         gradient: "animatedgradient 6s ease infinite alternate",
+        pulsate: "pulsate 1.5s ease-in-out infinite",
       },
     },
   },

@@ -9,7 +9,7 @@
 /* Firefox */
 * {
   scrollbar-width: thin;
-  scrollbar-color: #18181b #4b5563;
+  scrollbar-color: #4b5563 #18181b;
 }
 
 /* Chrome, Edge, and Safari */
@@ -31,6 +31,11 @@
   --foreground-rgb: 249, 249, 251;
   --background-start-rgb: 10, 9, 8;
   --background-end-rgb: 10, 9, 8;
+}
+
+.carousel-wrapper {
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 body {

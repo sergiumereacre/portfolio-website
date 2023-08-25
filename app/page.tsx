@@ -44,7 +44,7 @@ export default function Home() {
                                 <motion.ul className="text-5xl flex justify-center gap-10 text-gray-600">
                                     <motion.li whileHover={{ scale: 1.15 }}>
                                         <a
-                                            className="hover:text-gray-800 hover:transition-all hover:duration-300"
+                                            className="hover:text-gray-900 hover:transition-all hover:duration-300"
                                             href="https://github.com/sergiumereacre"
                                             target="_blank"
                                             rel="noopener noreferrer"

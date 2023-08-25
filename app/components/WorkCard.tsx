@@ -37,7 +37,7 @@ export default function WorkCard(props: WorkCardProps) {
     }
 
     return (
-        <motion.div whileHover={{ scale: 0.97 }} className="bg-card p-7 max-w-lg rounded-2xl flex flex-col gap-2 hover:bg-cardAccent hover:transition-all hover:duration-250 hover:ease-out">
+        <motion.div whileHover={{ scale: 0.97 }} className="transition ease-out bg-card p-7 max-w-lg rounded-2xl flex flex-col gap-2 hover:bg-cardAccent hover:transition-all hover:duration-250 hover:ease-out">
             <div className="flex flex-row items-center gap-3">
                 <Icon size={iconSize} className={`text-gray-300 drop-shadow-[0px_0px_15px_var(--tw-shadow-color)] ${shadowColour}`} />
                 <div className="w-full">
