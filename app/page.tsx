@@ -21,7 +21,7 @@ export default function Home() {
 
     return (
         <NextUIProvider>
-            <div className="bg-background min-h-screen">
+            <div className="bg-background min-h-screen min-w-fit">
                 <div className="flex flex-col">
                     <Navbar />
                     <div className="flex flex-col">
@@ -101,17 +101,31 @@ export default function Home() {
                                 </h2>
                             </div>
                             <div className="flex flex-col justify-end gap-10 md:px-10 lg:px-20">
-                                <div className="">
-                                    <WorkCard location="UL" title="Computer Systems Student" timeFrame="May 2020 - PRESENT" type="student" address="https://www.ul.ie/">
-                                    Maintaining a QCA of 3.64, I am currently approaching the culmination of 
-                                    my academic journey at the University of Limerick. During my second year of study, 
-                                    I was honored to receive the prestigious Huawei Seeds for the Future scholarship, a distinction 
-                                    that not only affirmed my dedication but also unlocked an exclusive avenue for delving into 
-                                    cutting-edge technologies and fortifying my expertise in the domain.
+                                <div>
+                                    <WorkCard
+                                        location="UL"
+                                        title="Computer Systems Student"
+                                        timeFrame="May 2020 - PRESENT"
+                                        type="student"
+                                        animate="left"
+                                        address="https://www.ul.ie/"
+                                    >
+                                        Maintaining a QCA of 3.64, I am currently approaching the culmination of
+                                        my academic journey at the University of Limerick. During my second year of study,
+                                        I was honored to receive the prestigious Huawei Seeds for the Future scholarship, a distinction
+                                        that not only affirmed my dedication but also unlocked an exclusive avenue for delving into
+                                        cutting-edge technologies and fortifying my expertise in the domain.
                                     </WorkCard>
                                 </div>
                                 <div className="ml-auto">
-                                    <WorkCard location="Intel" title="Silicon Verification Engineer Intern" timeFrame="June 2023 - August 2023" type="work" address="https://www.intel.ie/content/www/ie/en/company-overview/intel-shannon.html">
+                                    <WorkCard
+                                        location="Intel"
+                                        title="Silicon Verification Engineer Intern"
+                                        timeFrame="June 2023 - August 2023"
+                                        type="work"
+                                        animate="right"
+                                        address="https://www.intel.ie/content/www/ie/en/company-overview/intel-shannon.html"
+                                    >
                                         During my summer internship at Intel Shannon, I was immersed in integrating intricate
                                         systems into the existing environment. Leveraging my Linux skills, I navigated challenges
                                         and resolved issues as needed. This hands-on experience allowed me to enhance my proficiency
@@ -119,7 +133,13 @@ export default function Home() {
                                     </WorkCard>
                                 </div>
                                 <div>
-                                    <WorkCard title="Software/Hardware Engineer Intern" location="Intel" timeFrame="May 2022 - January 2023" type="work" address="https://www.intel.ie/content/www/ie/en/company-overview/intel-shannon.html">
+                                    <WorkCard
+                                        title="Software/Hardware Engineer Intern"
+                                        location="Intel" timeFrame="May 2022 - January 2023"
+                                        type="work"
+                                        animate="left"
+                                        address="https://www.intel.ie/content/www/ie/en/company-overview/intel-shannon.html"
+                                    >
                                         During my co-operative education at Intel Shannon, I had the opportunity
                                         to refine my skills in Python scripting and programming, while
                                         gaining valuable hands-on experience in UVM and SystemVerilog.
@@ -129,7 +149,14 @@ export default function Home() {
                                     </WorkCard>
                                 </div>
                                 <div className="ml-auto">
-                                    <WorkCard location="Echo I.T." title="Consultant Internship" timeFrame="August 2017 - January 2018" type="consult" address="https://www.echoit.ie/">
+                                    <WorkCard
+                                        location="Echo I.T."
+                                        title="Consultant Internship"
+                                        timeFrame="August 2017 - January 2018"
+                                        type="consult"
+                                        animate="right"
+                                        address="https://www.echoit.ie/"
+                                    >
                                         As part of a team of engineers and technicians, I collaborated
                                         on providing technical assistance and support to customers.
                                         Through this experience, I gained valuable insights into the
@@ -143,6 +170,6 @@ export default function Home() {
                     <Footer />
                 </div>
             </div>
-        </NextUIProvider>
+        </NextUIProvider >
     );
 }

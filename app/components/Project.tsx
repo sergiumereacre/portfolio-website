@@ -44,7 +44,7 @@ export default function Project({ title, description, longDescription, images, t
                     ))}
                 </div>
             </button>
-            <Modal backdrop="blur" placement="auto" size="4xl" scrollBehavior="inside" isOpen={isOpen} onOpenChange={onOpenChange}>
+            <Modal backdrop="blur" placement="auto" size="3xl" scrollBehavior="inside" isOpen={isOpen} onOpenChange={onOpenChange}>
                 <ModalContent>
                     {(onClose) => (
                         <>
