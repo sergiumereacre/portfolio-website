@@ -38,7 +38,7 @@ export default function Project({ title, description, longDescription, images, t
                         {description}
                     </p>
                 </div>
-                <div className="flex flex-row gap-2">
+                <div className="flex flex-wrap items-center justify-center gap-2">
                     {technologies.map((tech, index) => (
                         <Chip key={index} className={tech.colour}>{tech.name}</Chip>
                     ))}
