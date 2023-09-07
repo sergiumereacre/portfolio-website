@@ -26,7 +26,7 @@ export default function Home() {
                     <Navbar />
                     <div className="flex flex-col">
                         <section className="flex flex-col items-center justify-center min-h-[625px] md:px-16 lg:px-20 max-w-[1024px] mx-auto">
-                            <div style={roboto.style} className="flex items-center flex-col md:flex-row md:gap-2 tracking-tighter text-8xl bg-gradient-to-r from-primary via-orange-400 to-primary text-transparent bg-clip-text animate-gradient bg-300%">
+                            <div style={roboto.style} className="flex items-center flex-col md:flex-row md:gap-2 tracking-tighter text-8xl bg-gradient-to-r from-primary via-red-500 to-primary text-transparent bg-clip-text animate-gradient bg-300%">
                                 <h2 className="py-2">
                                     Sergiu
                                 </h2>
