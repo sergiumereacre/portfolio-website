@@ -24,6 +24,7 @@ export default function RootLayout({
     <html lang="en" className={inter.className}>
       <body className='dark'>
         <Providers>{children}</Providers>
+        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bfa63409f4ec48f987d5018b749dd4c6"}'></script>
       </body>
     </html>
   )
