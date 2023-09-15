@@ -2,12 +2,13 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Providers } from './providers'
-import GoogleAnalytics from '@/app/components/GoogleAnalytics'
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
 })
+
+export const runtime = 'edge';
 
 export const metadata: Metadata = {
   title: 'Sergiu Mereacre / Portfolio',
@@ -21,7 +22,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID as string} />
       <body className='dark'>
         <Providers>{children}</Providers>
       </body>
