@@ -1,5 +1,5 @@
 export default async function sitemap() {
-    const baseUrl = 'https://www.sergiu.ie';
+    const baseUrl = 'https://sergiu.ie';
 
     return [
         { url: baseUrl, lastModified: new Date() },
