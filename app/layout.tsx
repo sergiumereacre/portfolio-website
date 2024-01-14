@@ -12,10 +12,14 @@ export const runtime = 'edge';
 
 export const metadata: Metadata = {
   title: 'Sergiu Mereacre / Portfolio',
-  description: 'Explore the distinguished portfolio of Sergiu Mereacre, an embodiment of my professional journey, expertise, and passions. Witness a carefully curated collection of my accomplishments, skills, and experiences, leaving a lasting impression of who I am.',
-}
+  description: 'Portfolio website showcasing my work and experience as a software engineer currently based in Ireland.',
+  openGraph: {
+    title: 'Sergiu Mereacre',
+    description: "Portfolio website showcasing my work and experience as a software engineer currently based in Ireland."
+  },
+};
 
-const jsonLd = {
+export const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Sergiu Mereacre",
@@ -33,7 +37,7 @@ const jsonLd = {
     "name": "University of Limerick",
     "sameAs": "https://www.ul.ie/"
   },
-}
+};
 
 export default function RootLayout({
   children,
