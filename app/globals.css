@@ -3,47 +3,41 @@
 @tailwind utilities;
 
 ::selection {
-  background: purple;
+	background: yellow;
 }
 
 /* Firefox */
 * {
-  scrollbar-width: thin;
-  scrollbar-color: #4b5563 #18181b;
+	scrollbar-width: thin;
+	scrollbar-color: #4b5563 #18181b;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 15px;
+	width: 15px;
 }
 
 *::-webkit-scrollbar-track {
-  background: #0A0908;
+	background: #0A0908;
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #4b5563;
-  border-radius: 15px;
-  border: 4px solid #0A0908;
+	background-color: #4b5563;
+	border-radius: 15px;
+	border: 4px solid #0A0908;
 }
 
 :root {
-  --foreground-rgb: 249, 249, 251;
-  --background-start-rgb: 10, 9, 8;
-  --background-end-rgb: 10, 9, 8;
+	--foreground-color: #efdcdd;
+	--background-color: #0A0908;
 }
 
 .carousel-wrapper {
-  border-radius: 20px;
-  overflow: hidden;
+	border-radius: 20px;
+	overflow: hidden;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: var(--foreground-color);
+	background: var(--background-color);
 }

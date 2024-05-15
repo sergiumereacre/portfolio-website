@@ -1,59 +1,61 @@
-import './globals.css'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { Providers } from './providers'
+// Default.
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+// Custom.
+import "./globals.css";
+import { Providers } from "./providers";
+import Navbar from "@/app/components/Navbar";
+import Footer from "@/app/components/Footer";
 
 const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-})
+	subsets: ["latin"],
+	display: "swap",
+});
 
-export const runtime = 'edge';
+export const runtime = "edge";
 
 export const metadata: Metadata = {
-  title: 'Sergiu Mereacre / Portfolio',
-  description: 'Portfolio website showcasing my work and experience as a software engineer currently based in Ireland.',
-  openGraph: {
-    title: 'Sergiu Mereacre',
-    description: "Portfolio website showcasing my work and experience as a software engineer currently based in Ireland."
-  },
-};
-
-export const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Sergiu Mereacre",
-  "jobTitle": "Software Developer",
-  "url": "https://sergiu.ie",
-  "email": "contact@sergiu.ie",
-  "image": "https://sergiu.ie/profile.png",
-  "sameAs": [
-    "https://www.linkedin.com/in/sergiumereacre/",
-  ],
-  "height": "187cm",
-  "gender": "male",
-  "alumniOf": {
-    "@type": "CollegeOrUniversity",
-    "name": "University of Limerick",
-    "sameAs": "https://www.ul.ie/"
-  },
+	title: "Sergiu Mereacre | Software Developer 🧑‍💻",
+	description:
+		"Discover the portfolio of Sergiu Mereacre, a software developer based in Ireland, featuring a collection of projects that showcase practical applications of modern technologies in software engineering.",
+	keywords: [
+		"sergiu",
+		"mereacre",
+		"software",
+		"developer",
+		"ireland",
+		"portfolio",
+		"projects",
+		"technologies",
+		"engineering",
+	],
+	openGraph: {
+		title: "Sergiu Mereacre | Software Developer 🧑‍💻",
+		description:
+			"Discover the portfolio of Sergiu Mereacre, a software developer based in Ireland, featuring a collection of projects that showcase practical applications of modern technologies in software engineering.",
+	},
 };
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode
+	children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className={inter.className}>
-      <body className='dark'>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        <Providers>{children}</Providers>
-        <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bfa63409f4ec48f987d5018b749dd4c6"}'></script>
-      </body>
-    </html>
-  )
+	return (
+		<html lang="en" className="dark">
+			<body className={inter.className}>
+				<script
+					defer
+					src="https://static.cloudflareinsights.com/beacon.min.js"
+					data-cf-beacon='{"token": "bfa63409f4ec48f987d5018b749dd4c6"}'
+				/>
+				<Providers>
+					<Navbar />
+					{children}
+					<Footer />
+				</Providers>
+			</body>
+		</html>
+	);
 }
